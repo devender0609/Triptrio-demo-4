@@ -1,5 +1,7 @@
-// web/app/debug/env/page.tsx
 "use client";
+
+// web/app/debug/env/page.tsx
+export const dynamic = 'force-dynamic';
 
 export default function EnvDebug() {
   return (
