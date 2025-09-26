@@ -1,3 +1,4 @@
+﻿export const dynamic = 'force-dynamic';
 // web/app/confirm/page.tsx
 "use client";
 
@@ -6,7 +7,7 @@ import Link from "next/link";
 
 export default function ConfirmPage() {
   const p = useSearchParams();
-  const orderId = p.get("orderId") || "—";
+  const orderId = p.get("orderId") || "â€”";
   const status  = p.get("status")  || "created";
   const total   = p.get("total");
   const currency = (p.get("currency") || "USD").toUpperCase();
@@ -29,14 +30,14 @@ export default function ConfirmPage() {
         <h1 style={{ marginTop: 0, fontWeight: 900 }}>Booking placed</h1>
         <p style={{ color: "#475569" }}>
           Thanks! Your booking has been created{status ? ` (status: ${status})` : ""}.
-          You’ll also receive an email from the airline/TripTrio (sandbox).
+          Youâ€™ll also receive an email from the airline/TripTrio (sandbox).
         </p>
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
           <div>
             <div><b>Order ID:</b> {orderId}</div>
-            <div><b>Airline:</b> {carrier || "—"}</div>
-            <div><b>Route:</b> {origin} → {dest}</div>
+            <div><b>Airline:</b> {carrier || "â€”"}</div>
+            <div><b>Route:</b> {origin} â†’ {dest}</div>
             <div><b>Depart:</b> {depart}</div>
             {ret ? <div><b>Return:</b> {ret}</div> : null}
           </div>

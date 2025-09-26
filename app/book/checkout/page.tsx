@@ -1,3 +1,4 @@
+﻿export const dynamic = 'force-dynamic';
 // web/app/book/checkout/page.tsx
 "use client";
 
@@ -74,7 +75,7 @@ export default function CheckoutPage() {
     <main style={{ maxWidth: 880, margin: "20px auto", padding: 16 }}>
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
         <a href="/book" style={{ border: "1px solid #e2e8f0", borderRadius: 8, height: 36, lineHeight: "36px", padding: "0 10px", textDecoration: "none" }}>
-          ← Back
+          â† Back
         </a>
         <Link href="/" style={{ marginLeft: "auto", textDecoration: "none", fontWeight: 900, color: "#0ea5e9" }}>
           TripTrio Home
@@ -84,7 +85,7 @@ export default function CheckoutPage() {
       <div style={{ background: "#fff", border: "1px solid #e5e7eb", borderRadius: 12, padding: 16 }}>
         <h1 style={{ marginTop: 0, marginBottom: 8, fontWeight: 900 }}>Checkout</h1>
         <p style={{ color: "#475569", marginTop: 0 }}>
-          Enter passenger and contact details. We’ll create the order in Duffel (sandbox).
+          Enter passenger and contact details. Weâ€™ll create the order in Duffel (sandbox).
         </p>
 
         {offer && <div style={{ marginBottom: 12, fontWeight: 800 }}>Total: {offer.total_amount} {offer.total_currency}</div>}
@@ -95,7 +96,7 @@ export default function CheckoutPage() {
           <div style={{ display: "grid", gap: 8 }}>
             <input placeholder="Email" value={email} onChange={e=>setEmail(e.target.value)}
                    style={{ height: 38, border: "1px solid #e5e7eb", borderRadius: 8, padding: "0 10px" }} />
-            <input placeholder="Phone (+1…)" value={phone} onChange={e=>setPhone(e.target.value)}
+            <input placeholder="Phone (+1â€¦)" value={phone} onChange={e=>setPhone(e.target.value)}
                    style={{ height: 38, border: "1px solid #e5e7eb", borderRadius: 8, padding: "0 10px" }} />
           </div>
         </fieldset>
@@ -126,9 +127,10 @@ export default function CheckoutPage() {
                 style={{ height: 44, padding: "0 16px", border: "none", borderRadius: 10, fontWeight: 900,
                          color: "#fff", background: "linear-gradient(90deg,#06b6d4,#0ea5e9)",
                          opacity: loading ? 0.6 : 1, cursor: loading ? "not-allowed" : "pointer" }}>
-          {loading ? "Booking…" : "Pay (sandbox) & Book"}
+          {loading ? "Bookingâ€¦" : "Pay (sandbox) & Book"}
         </button>
       </div>
     </main>
   );
 }
+

@@ -1,3 +1,4 @@
+﻿export const dynamic = 'force-dynamic';
 // web/app/book/page.tsx
 "use client";
 
@@ -138,7 +139,7 @@ export default function BookPage() {
     <main style={{ maxWidth: 980, margin: "20px auto", padding: 16 }}>
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
         <button onClick={() => router.back()} className="btn" style={{ height: 36 }}>
-          ← Back
+          â† Back
         </button>
         <Link href="/" className="btn ghost" style={{ marginLeft: "auto", height: 36 }}>
           TripTrio Home
@@ -162,10 +163,10 @@ export default function BookPage() {
           }}
         >
           <div style={{ display: "grid", gap: 6 }}>
-            <div><b>Flight ID:</b> {flightId || "—"}</div>
-            <div><b>Carrier:</b> {carrier || "—"}</div>
-            <div><b>Route:</b> {origin || "—"} → {destination || "—"}</div>
-            <div><b>Depart:</b> {depart || "—"}</div>
+            <div><b>Flight ID:</b> {flightId || "â€”"}</div>
+            <div><b>Carrier:</b> {carrier || "â€”"}</div>
+            <div><b>Route:</b> {origin || "â€”"} â†’ {destination || "â€”"}</div>
+            <div><b>Depart:</b> {depart || "â€”"}</div>
             {ret ? <div><b>Return:</b> {ret}</div> : null}
             {hotel ? <div><b>Hotel:</b> {hotel}</div> : null}
           </div>
@@ -182,10 +183,10 @@ export default function BookPage() {
             }}
           >
             <div style={{ color: "#64748b", fontWeight: 700 }}>
-              {cabin ? `Cabin: ${cabin} • ` : ""}Pax: {paxCount}
+              {cabin ? `Cabin: ${cabin} â€¢ ` : ""}Pax: {paxCount}
             </div>
             <div style={{ fontSize: 22, fontWeight: 900 }}>
-              {total !== undefined ? fmt.format(Math.round(total)) : "—"}
+              {total !== undefined ? fmt.format(Math.round(total)) : "â€”"}
             </div>
             <div style={{ color: "#64748b", fontWeight: 700 }}>Total ({currency})</div>
           </div>
@@ -311,7 +312,7 @@ export default function BookPage() {
         )}
         {orderId && (
           <div style={{ marginTop: 12, padding: 10, border: "1px solid #bbf7d0", background: "#ecfdf5", color: "#065f46", borderRadius: 10, fontWeight: 800 }}>
-            ✅ Order created (sandbox). Duffel Order ID: <code>{orderId}</code>
+            âœ… Order created (sandbox). Duffel Order ID: <code>{orderId}</code>
           </div>
         )}
 
@@ -330,7 +331,7 @@ export default function BookPage() {
               background: "linear-gradient(90deg,#06b6d4,#0ea5e9)",
             }}
           >
-            {submitting ? "Processing…" : "Pay (sandbox) & Book"}
+            {submitting ? "Processingâ€¦" : "Pay (sandbox) & Book"}
           </button>
 
           <a
@@ -378,3 +379,4 @@ const labelStyle: React.CSSProperties = {
   fontWeight: 800,
   color: "#334155",
 };
+

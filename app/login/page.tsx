@@ -1,3 +1,4 @@
+﻿export const dynamic = 'force-dynamic';
 // web/app/login/page.tsx
 "use client";
 
@@ -53,7 +54,7 @@ export default function LoginPage() {
             <code> NEXT_PUBLIC_SUPABASE_ANON_KEY </code> are set in
             <code> web/.env.local</code>.
           </p>
-          <Link href="/" className="btn">← Back to home</Link>
+          <Link href="/" className="btn">â† Back to home</Link>
         </div>
         <style jsx>{styles}</style>
       </main>
@@ -71,7 +72,7 @@ export default function LoginPage() {
         <h1 className="title">Login</h1>
 
         {loading ? (
-          <p>Checking session…</p>
+          <p>Checking sessionâ€¦</p>
         ) : userEmail ? (
           <div className="signed">
             <p>Signed in as <b>{userEmail}</b></p>
@@ -93,7 +94,7 @@ export default function LoginPage() {
             },
           }}
           providers={["google"]}   // GitHub removed
-          // keep email/password visible (don’t set onlyThirdPartyProviders)
+          // keep email/password visible (donâ€™t set onlyThirdPartyProviders)
           redirectTo={
             typeof window !== "undefined"
               ? window.location.origin + "/login"
@@ -103,7 +104,7 @@ export default function LoginPage() {
 
         {!userEmail && (
           <p className="hint">
-            After signing in you’ll be redirected{nextPath ? ` to ${nextPath}` : ""}.
+            After signing in youâ€™ll be redirected{nextPath ? ` to ${nextPath}` : ""}.
           </p>
         )}
       </div>
@@ -142,3 +143,4 @@ const styles = `
 .hint{margin-top:10px; color:#475569; text-align:center;}
 .signed p{margin:0 0 8px 0;}
 `;
+

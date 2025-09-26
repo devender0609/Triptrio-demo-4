@@ -1,3 +1,4 @@
+﻿export const dynamic = 'force-dynamic';
 // web/app/checkout/page.tsx
 "use client";
 
@@ -45,7 +46,7 @@ export default function CheckoutPage() {
 
   async function handlePay() {
     if (!canSubmit) return;
-    // This is still sandbox — stub server hook you’ll wire to Duffel + Stripe later.
+    // This is still sandbox â€” stub server hook youâ€™ll wire to Duffel + Stripe later.
     try {
       const res = await fetch("/api/checkout/sandbox", {
         method: "POST",
@@ -66,7 +67,7 @@ export default function CheckoutPage() {
         const j = await res.json().catch(() => ({}));
         throw new Error(j?.error || "Checkout failed");
       }
-      alert("Sandbox: this is where you’d be redirected to Stripe Checkout.");
+      alert("Sandbox: this is where youâ€™d be redirected to Stripe Checkout.");
       // router.push("/success"); // when you have a success page
     } catch (e: any) {
       alert(e?.message || "Checkout failed");
@@ -76,18 +77,18 @@ export default function CheckoutPage() {
   return (
     <main style={{ maxWidth: 960, margin: "16px auto", padding: 12 }}>
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
-        <button onClick={() => router.back()} className="btn-ghost">← Back</button>
+        <button onClick={() => router.back()} className="btn-ghost">â† Back</button>
         <Link href="/" className="home-link">TripTrio Home</Link>
       </div>
 
       <section className="card">
         <h1 className="title">Checkout</h1>
-        <p className="sub">Enter passenger and contact details. We’ll create the order in Duffel (sandbox).</p>
+        <p className="sub">Enter passenger and contact details. Weâ€™ll create the order in Duffel (sandbox).</p>
 
         <div className="total">
           <b>Total:</b>{" "}
-          {total !== undefined ? <span className="amt">{fmt.format(Math.round(total))}</span> : "—"}
-          <span className="meta">{pax > 1 ? `  •  ${pax} passenger(s)` : ""}</span>
+          {total !== undefined ? <span className="amt">{fmt.format(Math.round(total))}</span> : "â€”"}
+          <span className="meta">{pax > 1 ? `  â€¢  ${pax} passenger(s)` : ""}</span>
         </div>
 
         <div className="block">
@@ -101,7 +102,7 @@ export default function CheckoutPage() {
             />
             <input
               type="tel"
-              placeholder="Phone (+1…)"
+              placeholder="Phone (+1â€¦)"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />
