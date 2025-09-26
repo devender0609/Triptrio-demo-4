@@ -1,5 +1,4 @@
-﻿export const dynamic = 'force-dynamic';
-// web/app/confirm/page.tsx
+﻿// web/app/confirm/page.tsx
 "use client";
 export const dynamic = 'force-dynamic';
 
