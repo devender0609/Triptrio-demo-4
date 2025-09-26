@@ -1,5 +1,6 @@
-﻿// web/app/confirm/page.tsx
-"use client";
+﻿"use client";
+
+// web/app/confirm/page.tsx
 export const dynamic = 'force-dynamic';
 
 import { useSearchParams } from "next/navigation";
