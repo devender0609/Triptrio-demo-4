@@ -1,6 +1,8 @@
 ﻿export const dynamic = 'force-dynamic';
 // web/app/checkout/page.tsx
 "use client";
+export const dynamic = 'force-dynamic';
+
 
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
