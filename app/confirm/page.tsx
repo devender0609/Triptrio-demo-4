@@ -1,11 +1,4 @@
 ﻿"use client";
-
-
-// web/app/confirm/page.tsx
-export const dynamic = 'force-dynamic';
->>>>>>> 19aaad8 (Put 'use client' first; dynamic second (confirm/checkout))
-
-// web/app/confirm/page.tsx
 export const dynamic = 'force-dynamic';
 
 import { useSearchParams } from "next/navigation";
