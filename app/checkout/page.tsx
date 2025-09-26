@@ -1,5 +1,6 @@
-﻿// web/app/checkout/page.tsx
-"use client";
+﻿"use client";
+
+// web/app/checkout/page.tsx
 export const dynamic = 'force-dynamic';
 
 import Link from "next/link";
