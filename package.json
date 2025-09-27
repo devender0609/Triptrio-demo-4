@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "triptrio-web",
   "version": "0.2.0",
   "private": true,
@@ -22,3 +22,4 @@
     "typescript": "^5.3.3"
   }
 }
+
