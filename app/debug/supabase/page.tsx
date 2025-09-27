@@ -1,6 +1,4 @@
 "use client";
-
-// web/app/debug/supabase/page.tsx
 export const dynamic = 'force-dynamic';
 
 import { getSupa } from "../../../lib/auth/supabase";

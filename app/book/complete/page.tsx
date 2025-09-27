@@ -1,6 +1,4 @@
 ﻿"use client";
-
-// web/app/book/complete/page.tsx
 export const dynamic = 'force-dynamic';
 
 import { useSearchParams } from "next/navigation";
